@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         super.onCreate(savedInstanceState);
         setContentView(binding.getRoot());
-        viewModel = new ViewModelProvider(MainActivity.this).get(CounterViewModel.class);
+        viewModel = new ViewModelProvider(this).get(CounterViewModel.class);
         initChanged();
         initListener();
     }
